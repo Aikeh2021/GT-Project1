@@ -1,3 +1,5 @@
+// console.log("oh hey!");
+
 // APPLICATION VARIABLES
 // DOM ELEMENTS
 // SET EVENT LISTENERS/HANDLERS
