@@ -10,7 +10,16 @@ $(document).ready(function () {
       url: searchAPI,
     }).then(getObjects);
 
-   
+
+
+  //testing ONLY:
+  $(document).ready(function () {
+    getCollection("monet", 10, gotCollectionData);
+  });
+
+  function gotCollectionData(data) {
+    console.log(data);
+  }
 
   // DOM ELEMENTS
   // SET EVENT LISTENERS/HANDLERS
