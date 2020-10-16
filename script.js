@@ -45,7 +45,19 @@ $(document).ready(function () {
       });
     }
 
-  
+    //get random elements from an array (helper function)
+    function getRandomSubset(arr, qty) {
+      if (arr.length < qty) return arr.slice(0); //no infinite loops, please!
+      const newArr = new Set();
+      while (newArr.size < qty) {
+        //set has size, not length
+        //get random from arr, put it in newArr if it's unique
+        let randIndex = Math.floor(Math.random() * arr.length);
+        newArr.add(arr[randIndex]);
+      }
+      return Array.from(newArr); //return array, not Set
+    }
+  }
 
   //testing ONLY:
   $(document).ready(function () {
