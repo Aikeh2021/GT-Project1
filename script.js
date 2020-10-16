@@ -20,7 +20,32 @@ $(document).ready(function () {
       }
     }
 
-    
+    function getObject(id) {
+      //single API call for objectId id
+      const objectAPI =
+        "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
+        id;
+      $.ajax({
+        type: "GET",
+        url: objectAPI,
+      }).then(function (obj) {
+        //add data to data array
+        data.push({
+          imageSrc: obj.primaryImage,
+          title: obj.title,
+          artist: obj.artistDisplayName,
+          bio: obj.artistDisplayBio,
+          date: obj.objectDate,
+          medium: obj.medium,
+        });
+        //do we have all the data?
+        if (data.length === qty) {
+          callback(data);
+        }
+      });
+    }
+
+  
 
   //testing ONLY:
   $(document).ready(function () {
