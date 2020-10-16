@@ -10,7 +10,17 @@ $(document).ready(function () {
       url: searchAPI,
     }).then(getObjects);
 
+    //for qty objectIDs, make another API call
+    function getObjects(collection) {
+      //get qty random objectIDs from collection.objectIDs
+      const objects = getRandomSubset(collection.objectIDs, qty);
+      //objects is an array of unique, random MET objectID numbers
+      for (let objectId of objects) {
+        getObject(objectId);
+      }
+    }
 
+    
 
   //testing ONLY:
   $(document).ready(function () {
