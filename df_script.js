@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
     function videoSearch(key, search, maxResults) {
 
-      $("#videos").empty()
+      $("#generated-content").empty()
 
       $.get(
         "https://www.googleapis.com/youtube/v3/search?key=" +
@@ -32,7 +32,7 @@ $(document).ready(function () {
             <iframe width="420" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder= "0" allowfullscreen></iframe>
 
             `
-            $("#videos").append(video)
+            $("#generated-content").append(video)
           });
         }
       );
