@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>YouTube</h1>
+      <form id="form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="search" />
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-danger" value="search" />
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="videos"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        //   var maxResults = 10;
+        var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
+
+        var video = ''
+
+        // var videos = $("#videos")
+
+        $("#form").submit(function (event) {
+          event.preventDefault();
+
+          var search = $("#search").val();
+
+          videoSearch(apiKey, search, 10);
+        });
+        function videoSearch(key, search, maxResults) {
+
+          $("#videos").empty()
+
+          $.get(
+            "https://www.googleapis.com/youtube/v3/search?key=" +
+              key +
+              "&type=video&part=snippet&maxResults=" +
+              maxResults +
+              "&q=" +
+              search,
+            function (data) {
+              console.log(data);
+              data.items.forEach(item => {
+                video = `
+
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder= "0" allowfullscreen></iframe>
+
+                `
+                $("#videos").append(video)
+              });
+            }
+          );
+        }
+
+        //   var URL =
+        //     "https://www.googleapis.com/youtube/v3/search?key=" +
+        //     apiKey +
+        //     "&type=video&part=snippet&maxResults=" +
+        //     maxResults +
+        //     "&q=" +
+        //     search;
+
+        //   $.ajax({
+        //     url: URL,
+        //     method: "GET",
+        //   }).then(function (response) {
+        //     console.log(response);
+        //   });
+      });
+    </script>
+  </body>
+</html>
