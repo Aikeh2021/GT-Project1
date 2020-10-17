@@ -1,3 +1,12 @@
+/* this makes the navbar stick to the top. */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* this brings the nav bar in front of the content. */
+  z-index: 1;
+}
+
 .container-fluid {
   position: absolute;
   margin-top: 150px;
@@ -13,8 +22,8 @@
   justify-content: center;
   align-items: center;
 }
-
-.btn {
+/* changed this to .cat because it was effecting all of the buttons. */
+.cat {
   margin: 10px;
   padding-left: 30px;
   padding-right: 30px;
