@@ -57,10 +57,6 @@ function getCollection(keyword, qty, callback) {
   }
 }
 function searchMet() {
-    $(".input-group > button").on("click", function () {
-      let metSearch = $("input").val();
-      getObject(id);
-    });
-    searchBtn();
-    let search = getRandomSubset();
-  }
+  $(".input-group > button").on("click", function () {
+    
+}
