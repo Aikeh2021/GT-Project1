@@ -9,7 +9,7 @@
 
 .container-fluid {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 #title {
@@ -24,20 +24,79 @@
 }
 /* changed this to .cat because it was effecting all of the buttons. */
 .cat {
-  margin: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 5px;
+  background-color: #eeeeee;
+  border-color: #333333;
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+#search-btn {
+  background-color: #eeeeee;
+  border-color: #333333;
+  /* border-radius: 5px; */
+  border-width: 2px;
+}
+
+#cat-headline {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-top: 300px;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none !important;
+}
+
+#search-input {
+  box-shadow: none !important;
+  padding-bottom: 48px;
+  border-color: #cccccc;
+  vertical-align: top;
+}
+
+#select-field,
+#select-field:active,
+#select-field:focus {
+  box-shadow: none !important;
+}
+
+
+
+/* Button Hovers */
+.home {
+  cursor: pointer;
+}
+#btn-one:hover {
+  background-color: #bfe7f9;
+}
+#btn-two:hover {
+  background-color: #f6c0dc;
+}
+#btn-three:hover {
+  background-color: #e2cbf3;
+}
+#btn-four:hover {
+  background-color: #ddeda3;
+}
+
+#search-btn:hover {
+  background-color: #f9edc2;
 }
 
 
 
 h3 {
   padding-top: 200px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 p {
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 /* footer  */
@@ -56,3 +115,4 @@ footer {
 #heart-icon {
   padding: 5px;
 }
+
