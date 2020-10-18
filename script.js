@@ -1,77 +1,102 @@
+// STORAGE
 $(document).ready(function () {
-  function getCollection(keyword, qty, callback) {
-    const searchAPI =
-      "https://collectionapi.metmuseum.org/public/collection/v1/search?q=" +
-      keyword;
-    let data = [];
-    //make first API call, get array of objectIDs from MET
-    $.ajax({
-      type: "GET",
-      url: searchAPI,
-    }).then(getObjects);
+  // console.log("oh hey!");
 
-    //for qty objectIDs, make another API call
-    function getObjects(collection) {
-      //get qty random objectIDs from collection.objectIDs
-      const objects = getRandomSubset(collection.objectIDs, qty);
-      //objects is an array of unique, random MET objectID numbers
-      for (let objectId of objects) {
-        getObject(objectId);
-      }
-    }
+  // APPLICATION VARIABLES
+  var btnOne = $("#btn-one");
+  var btnTwo = $("#btn-two");
+  var btnThree = $("#btn-three");
+  var btnFour = $("#btn-four");
+  var catHeadline = $("#cat-headline");
+  var catDesc = $("#cat-desc");
+  var form = $("form");
+  var content = $("#generated-content");
 
-    function getObject(id) {
-      //single API call for objectId id
-      const objectAPI =
-        "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
-        id;
-      $.ajax({
-        type: "GET",
-        url: objectAPI,
-      }).then(function (obj) {
-        //add data to data array
-        data.push({
-          imageSrc: obj.primaryImage,
-          title: obj.title,
-          artist: obj.artistDisplayName,
-          bio: obj.artistDisplayBio,
-          date: obj.objectDate,
-          medium: obj.medium,
-        });
-        //do we have all the data?
-        if (data.length === qty) {
-          callback(data);
-        }
-      });
-    }
-
-    //get random elements from an array (helper function)
-    function getRandomSubset(arr, qty) {
-      if (arr.length < qty) return arr.slice(0); //no infinite loops, please!
-      const newArr = new Set();
-      while (newArr.size < qty) {
-        //set has size, not length
-        //get random from arr, put it in newArr if it's unique
-        let randIndex = Math.floor(Math.random() * arr.length);
-        newArr.add(arr[randIndex]);
-      }
-      return Array.from(newArr); //return array, not Set
-    }
+  function init() {
+    form.css("visibility", "hidden");
   }
 
-  //testing ONLY:
-  $(document).ready(function () {
-    getCollection("monet", 10, gotCollectionData);
-  });
-
-  function gotCollectionData(data) {
-    console.log(data);
-  }
+  init();
 
   // DOM ELEMENTS
+
+  function catOne(event) {
+    console.log("music");
+    // Visible attributes //
+    form.css("visibility", "visible");
+    catHeadline.html("Music");
+    catDesc.html(
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+    );
+
+    content.append('<img src="https://www.fillmurray.com/g/600/300" />');
+    content.css("padding-bottom", "100px");
+    // Navigate down the page //
+    $("html, body").animate({ scrollTop: form.height() }, 750);
+  }
+
+  function catTwo() {
+    console.log("film");
+    // Visible attributes //
+    form.css("visibility", "visible");
+    catHeadline.html("Film");
+    catDesc.html(
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+    );
+
+    content.append('<img src="https://www.fillmurray.com/g/600/300" />');
+    content.css("padding-bottom", "100px");
+    // Navigate down the page //
+    $("html, body").animate({ scrollTop: form.height() }, 750);
+  }
+
+  function catThree() {
+    console.log("art");
+    // Visible attributes //
+    form.css("visibility", "visible");
+    catHeadline.html("Art");
+    catDesc.html(
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+    );
+
+    content.append('<img src="https://www.fillmurray.com/g/600/300" />');
+    content.css("padding-bottom", "100px");
+    // Navigate down the page //
+    $("html, body").animate({ scrollTop: form.height() }, 750);
+  }
+
+  function catFour() {
+    console.log("read");
+    // Visible attributes //
+    form.css("visibility", "visible");
+    catHeadline.html("Read");
+    catDesc.html(
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+    );
+
+    content.append('<img src="https://www.fillmurray.com/g/600/300" />');
+    content.css("padding-bottom", "100px");
+    // Navigate down the page //
+    $("html, body").animate({ scrollTop: form.height() }, 750);
+  }
+
   // SET EVENT LISTENERS/HANDLERS
-  // API CALLS
-  // API RESPONSES
-  // APPLICATION LOGIC
-  // STORAGE
+
+  btnOne.on("click", catOne);
+  btnTwo.on("click", catTwo);
+  btnThree.on("click", catThree);
+  btnFour.on("click", catFour);
+
+  var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
+  var URL =
+    "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=" +
+    apiKey +
+    "&part=snippet,contentDetails,statistics,status";
+
+  $.ajax({
+    url: URL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+  });
 });

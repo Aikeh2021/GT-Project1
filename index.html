@@ -26,19 +26,71 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
+    <!-- i added an id to nav bar to target it in css. it has to have a background color so you cant see the content as it scrolls under it. -->
+    <nav class="navbar navbar-light bg-light" id="navbar">
+      <span class="navbar-brand mb-0 h1">Home</span>
+    </nav>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <h1 class="display-4 text-center">The Inspirator</h1>
+        <div class="col-md-3"></div>
+        <div class="col-md-6" id="header">
+          <h1 class="display-4 text-center" id="title">The Inspirator</h1>
           <p class="text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa
-            itaque dolore cumque ut doloremque expedita et, laborum nostrum harum.
+            itaque dolore cumque ut doloremque expedita et, laborum nostrum
+            harum.
           </p>
+          <div id="btn-div">
+            <button type="button" class="btn btn-light cat" id="btn-one">
+              <span id="icon-one"></span>
+              Music
+            </button>
+            <button type="button" class="btn btn-light cat" id="btn-two">
+              Film
+            </button>
+            <button type="button" class="btn btn-light cat" id="btn-three">
+              Art
+            </button>
+            <button type="button" class="btn btn-light cat" id="btn-four">
+              Read
+            </button>
+          </div>
+          <form>
+            <h3 class="display-3 text-center" id="cat-headline"></h3>
+            <!-- should this be p or h3? -->
+            <p class="text-center" id="cat-desc"></p>
+            <div id="select-field">
+              <select class="form-control form-control-md">
+                <option>subcategories</option>
+              </select>
+            </div>
+            <br />
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="search-input"
+                type="search"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-primary" id="search-btn" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div id="generated-content"></div>
         </div>
+        <div class="col-md-3"></div>
       </div>
+      <footer>
+        <hr />
+        <p>
+          Made with lots and lots of<i id="heart-icon" class="fas fa-heart"></i>
+        </p>
+      </footer>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
@@ -51,6 +103,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
