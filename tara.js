@@ -65,4 +65,6 @@ $("#ytForm").submit(function (event) {
   artSearch(apiKey, search, 10);
 });
 
+function artSearch(key, search) {
 
+        });
