@@ -14,6 +14,11 @@ We will concentrate on four main sources: Music, Visual Arts, Movies and Videos,
 
 ## Instillation
 
+1. Please visit GitHub and search for user mbostwick1.
+2. Once you have found mbostwick1 look inside the repository tab and select GT-Project1
+3. Clone the GT-Project1
+4. From there, git pull and type code . to open in Visual Studio Code and begin editing
+
 ## Usage
 
 ## License
