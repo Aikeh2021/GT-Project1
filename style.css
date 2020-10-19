@@ -61,7 +61,8 @@
 
 #select-field,
 #select-field:active,
-#select-field:focus {
+#select-field:focus,
+#select-field  {
   box-shadow: none !important;
 }
 
@@ -116,3 +117,23 @@ footer {
   padding: 5px;
 }
 
+/* Media queries */
+
+@media only screen and (max-width: 767px) {
+
+  #btn-div {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 75%;
+    text-align: center;
+  }
+
+  h3, p {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 75%;
+    text-align: center;
+  }
+}

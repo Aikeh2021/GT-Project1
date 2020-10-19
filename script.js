@@ -28,7 +28,7 @@ $(document).ready(function () {
     console.log("music");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
@@ -43,7 +43,7 @@ $(document).ready(function () {
     console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
@@ -58,7 +58,7 @@ $(document).ready(function () {
     console.log("art");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
@@ -73,7 +73,7 @@ $(document).ready(function () {
     console.log("read");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
