@@ -97,19 +97,5 @@ $(document).ready(function () {
   btnFour.on("click", catFour);
   homeBtn.on("click", homeReset);
 
-  var maxResults = 10
-  var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
-  var URL =
-    "https://www.googleapis.com/youtube/v3/search?key=" +
-    apiKey +
-    "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search;
-
-    "https://www.googleapis.com/youtube/v3/videos"
-
-  $.ajax({
-    url: URL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-  });
+  
 });

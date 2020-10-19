@@ -1,18 +1,18 @@
 $(document).ready(function () {
-    //   var maxResults = 10;
+
     var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
 
     var video = ''
 
-    // var videos = $("#videos")
-
-    $("#form").submit(function (event) {
+    $("#ytForm").submit(function (event) {
       event.preventDefault();
 
-      var search = $("#search").val();
+      var search = $("#search-input").val();
+      console.log(search);
 
       videoSearch(apiKey, search, 10);
     });
+    
     function videoSearch(key, search, maxResults) {
 
       $("#generated-content").empty()
@@ -38,18 +38,4 @@ $(document).ready(function () {
       );
     }
 
-    //   var URL =
-    //     "https://www.googleapis.com/youtube/v3/search?key=" +
-    //     apiKey +
-    //     "&type=video&part=snippet&maxResults=" +
-    //     maxResults +
-    //     "&q=" +
-    //     search;
-
-    //   $.ajax({
-    //     url: URL,
-    //     method: "GET",
-    //   }).then(function (response) {
-    //     console.log(response);
-    //   });
   });
