@@ -21,6 +21,13 @@ We will concentrate on four main sources: Music, Visual Arts, Movies and Videos,
 
 ## Usage
 
+Please view gif to see the how the quiz performance.
+![GT-Project1]()
+
+To view live visit: [click here.]()
+
+One may also view locally by following the above installation steps and opening [index.html](index.html) in your browser.
+
 ## License
 
 ## Credits
