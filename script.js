@@ -33,7 +33,6 @@ $(document).ready(function () {
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
@@ -48,7 +47,6 @@ $(document).ready(function () {
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
@@ -63,7 +61,6 @@ $(document).ready(function () {
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
@@ -78,7 +75,6 @@ $(document).ready(function () {
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
