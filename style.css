@@ -62,11 +62,9 @@
 #select-field,
 #select-field:active,
 #select-field:focus,
-#select-field  {
+#select-field {
   box-shadow: none !important;
 }
-
-
 
 /* Button Hovers */
 .home {
@@ -88,8 +86,6 @@
 #search-btn:hover {
   background-color: #f9edc2;
 }
-
-
 
 h3 {
   padding-top: 200px;
@@ -120,7 +116,6 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 767px) {
-
   #btn-div {
     margin: 0 auto;
     display: block;
@@ -129,7 +124,8 @@ footer {
     text-align: center;
   }
 
-  h3, p {
+  h3,
+  p {
     margin: 0 auto;
     display: block;
     float: none;
@@ -137,13 +133,13 @@ footer {
     text-align: center;
   }
 
- .generated-content {
+  .generated-content {
     margin: 0 auto;
     display: block;
     float: none;
     width: 100%;
     text-align: center;
     justify-content: center;
-  align-items: center;
+    align-items: center;
   }
 }
