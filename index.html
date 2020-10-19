@@ -30,7 +30,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
-    <!-- i added an id to nav bar to target it in css. it has to have a background color so you cant see the content as it scrolls under it. -->
+    <!-- I added an id to nav bar to target it in css. it has to have a background color so you cant see the content as it scrolls under it. -->
     <nav class="navbar navbar-light bg-transparent" id="navbar">
       <span class="navbar-brand mb-0 home">
         <lottie-player
@@ -51,7 +51,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6" id="header">
           <h1 class="display-4 text-center" id="title">The Inspirator</h1>
-          <p class="text-center">
+          <p class="text-center" id="site-par">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa
             itaque dolore cumque ut doloremque expedita et, laborum nostrum
             harum.
@@ -84,6 +84,7 @@
                 hover
               ></lottie-player>
             </button>
+            <!-- the movie section -->
             <button type="button" class="btn cat" id="btn-four">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json"
@@ -116,12 +117,12 @@
               <div class="input-group-append">
                 <button class="btn" id="search-btn" type="submit">
                   <lottie-player
-                src="https://assets7.lottiefiles.com/packages/lf20_gdy6bjaf.json"
-                background="transparent"
-                speed="1"
-                style="width: 40px; height: 40px"
-                hover
-              ></lottie-player>
+                    src="https://assets7.lottiefiles.com/packages/lf20_gdy6bjaf.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 40px; height: 40px"
+                    hover
+                  ></lottie-player>
                 </button>
               </div>
             </div>
@@ -150,5 +151,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./script.js"></script>
+    <!-- Added my javascript to make sure it works -->
+    <script src="ashley.js"></script>
   </body>
 </html>
