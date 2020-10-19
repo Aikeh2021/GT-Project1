@@ -56,7 +56,4 @@ function getCollection(keyword, qty, callback) {
     return Array.from(newArr); //return array, not Set
   }
 }
-function searchMet() {
-  $(".input-group > button").on("click", function () {
-    
-}
+
