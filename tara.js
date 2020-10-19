@@ -57,3 +57,12 @@ function getCollection(keyword, qty, callback) {
   }
 }
 
+$("#ytForm").submit(function (event) {
+  event.preventDefault();
+
+  var search = $("#search-input").val();
+
+  artSearch(apiKey, search, 10);
+});
+
+
