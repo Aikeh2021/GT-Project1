@@ -1,39 +1,43 @@
 $(document).ready(function () {
-  var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
+  var apiKey = "AIzaSyBKB2UocjLih904S60Nn4VCaOM-QMHQyQM";
 
   var video = "";
-
+  // once the form is submitted
   $("form").on("submit", function (event) {
     if ($(this).attr("id") !== "music") return;
+    // we run prevent default to keep from refreshing the page.
     event.preventDefault();
-
+    // this variable holds the input data from the user input.
     var search = $("#search-input").val();
-    console.log(search);
-
+    // here we call the video search function.
     videoSearch(apiKey, search, 10);
   });
-
+  // this is the video search function.
   function videoSearch(key, search, maxResults) {
     $("#generated-content").empty();
-
-    $.get(
+    // this variable holds the url.
+    var URL =
       "https://www.googleapis.com/youtube/v3/search?key=" +
-        key +
-        "&type=video&part=snippet&maxResults=" +
-        maxResults +
-        "&q=" +
-        search,
-      function (data) {
-        console.log(data);
-        data.items.forEach((item) => {
-          video = `
+      key +
+      "&type=video&part=snippet&maxResults=" +
+      maxResults +
+      "&q=" +
+      search;
+    // this is the ajax call to get the data from the api.
+    $.ajax({
+      url: URL,
+      method: "GET",
+    }).then(function (response) {
+      // this dynamically generates html to hold the video.
+      response.items.forEach((item) => {
+        video = `
 
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder= "0" allowfullscreen></iframe>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder= "0" allowfullscreen></iframe>
 
-            `;
-          $("#generated-content").append(video);
-        });
-      }
-    );
+        `;
+        // here we append the video to the screen.
+        $("#generated-content").append(video);
+      });
+    });
   }
 });
