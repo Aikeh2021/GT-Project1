@@ -1,8 +1,7 @@
 // STORAGE
 $(document).ready(function () {
   // console.log("oh hey!");
-
-
+  
   // APPLICATION VARIABLES
   var btnOne = $("#btn-one");
   var btnTwo = $("#btn-two");
