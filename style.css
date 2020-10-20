@@ -61,7 +61,7 @@
 
 #search {
   box-shadow: none !important;
-  padding-bottom: 48px;
+  padding: 25px;
   border-color: #cccccc;
   vertical-align: top;
 }
@@ -126,7 +126,6 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 767px) {
-
   .container-fluid {
     margin-top: 100px;
   }
@@ -163,5 +162,19 @@ footer {
 #generated-content img {
   max-height: 250px;
   vertical-align: middle;
-  margin: 5px;
+  margin: 10px;
+}
+
+#tooltip {
+  position: absolute;
+  background-color: rgba(210, 180, 240, 0.9);
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid maroon;
+  border-radius: 5px;
+  transform: translate(-50%, -125%);
+  pointer-events: none;
+  z-index: 10;
 }
