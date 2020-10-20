@@ -13,7 +13,7 @@
 }
 
 #title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: Escafina-Medium;
 }
 
@@ -92,7 +92,7 @@ h3 {
   padding-bottom: 5px;
 }
 
-p {
+.cat-p {
   padding-bottom: 40px;
 }
 

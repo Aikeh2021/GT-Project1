@@ -6,7 +6,7 @@ $(document).ready(function(){
  $("#btn-four").on("click", function(){
     $("#generated-content").empty("");
    $("#cat-desc").empty("").text("'Drama is life with the dullbits cut out.'  --Alfred Hitchcock");
-   $("#cat-headline").empty("").text("Film");
+//    $("#cat-headline").empty("").text("Film");
    var titleArray = ["399174", "399579", "313922", "16869", "110415", "376867", "291979", "42506", "37799", "426426", "487558", "158445-7", "496243", "11324", "341013", "640", "37165", "210577", "437068", "290098", "1904", "274109", "9550", "17903", "398920", "338729", "57825", "21058", "857", "535292", "205596", "264644", "203801", "458723", "16052", "109410", "354912", "2640", "396535", "15917", "10950", "570670", "350", "50646" ];
    var movieId = titleArray[Math.floor(Math.random()*titleArray.length)];
    var queryURL = "https://api.themoviedb.org/3/movie/" + movieId + "?api_key=a60b3a8bc5eefd424c235053a3248b79&append_to_response=videos"
