@@ -67,7 +67,7 @@ $("form").on("submit", function (e) {
 
 function displayCollection(data) {
   var html = "";
-  for (let item of data) {
+  for (let item of data) { 
     let tooltip = `Title: ${item.title} (${item.date || "?"})<br/>Artist: ${
       item.artist || "?"
     }<br/>Medium: ${item.medium}`;
