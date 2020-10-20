@@ -21,14 +21,19 @@ We will concentrate on four main sources: Music, Visual Arts, Movies and Videos,
 
 ## Usage
 
-Please view gif to see the how the quiz performance.
-![GT-Project1]()
+Please view gif to see The Inspirator performs.
+![GT-Project1](assets/the-inspirator-p1.gif)
 
 To view live visit: [click here.](https://mbostwick1.github.io/GT-Project1/)
 
 One may also view locally by following the above installation steps and opening [index.html](index.html) in your browser.
 
 ## Collaborators
+The following developers are responsible for the content on this page!
+* [Melanie Botswick](https://github.com/mbostwick1)
+* [Dennis Francis](https://github.com/dnfrancis22)
+* [Phillip Marzullo](https://github.com/philipmarz73)
+* [Tara Martin](https://github.com/martintara117)
 * [Ashley Ikeh](https://github.com/Aikeh2021)
 
 ## License
@@ -66,6 +71,8 @@ SOFTWARE.
 * [Document Ready](https://learn.jquery.com/using-jquery-core/document-ready/)
 * [Random Array Item](https://www.kirupa.com/html5/picking_random_item_from_array.htm)
 * [Quotes About Film Making](https://www.filmcrux.com/blog/best-filmmaking-quotes)
+* [Requesting an API TMDB](https://developers.themoviedb.org/3/getting-started/introduction)
+
 
 
 
