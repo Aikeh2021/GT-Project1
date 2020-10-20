@@ -90,6 +90,7 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    
   }
 
   function homeReset() {
