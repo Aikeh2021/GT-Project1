@@ -30,10 +30,10 @@ function getCollection(keyword, qty, callback) {
       //add data to data array
       data.push({
         imageSrc: obj.primaryImage,
-        title: obj.title,
-        artist: obj.artistDisplayName,
-        date: obj.objectDate,
-        medium: obj.medium,
+        title: obj.title.replace(/"/g, "&quot;"),
+        artist: obj.artistDisplayName.replace(/"/g, "&quot;"),
+        date: obj.objectDate.replace(/"/g, "&quot;"),
+        medium: obj.medium.replace(/"/g, "&quot;"),
       });
       //do we have all the data?
       if (data.length === qty) {
@@ -68,7 +68,7 @@ $("form").on("submit", function (e) {
 function displayCollection(data) {
   var html = "";
   for (let item of data) {
-    let tooltip = `Title: ${item.title} (${item.date})<br/>Artist: ${
+    let tooltip = `Title: ${item.title} (${item.date || "?"})<br/>Artist: ${
       item.artist || "?"
     }<br/>Medium: ${item.medium}`;
     html += `<img src="${item.imageSrc}" data-tooltip="${tooltip}">`;
@@ -86,6 +86,8 @@ function tooltipOn(e) {
   e.target.removeEventListener("mouseover", tooltipOn);
   e.target.addEventListener("mousemove", tooltipMove);
   e.target.addEventListener("mouseout", tooltipOff);
+  let oldTooltip = document.querySelector("#tooltip");
+  if (oldTooltip) oldTooltip.outerHTML = "";
   tooltip = document.createElement("div");
   tooltip.id = "tooltip";
   tooltip.innerHTML = e.target.getAttribute("data-tooltip");
