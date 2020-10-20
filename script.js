@@ -38,6 +38,7 @@ $(document).ready(function () {
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
     $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catTwo() {
@@ -56,6 +57,7 @@ $(document).ready(function () {
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
     $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catThree() {
@@ -74,6 +76,7 @@ $(document).ready(function () {
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
     $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catFour() {
@@ -92,6 +95,7 @@ $(document).ready(function () {
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
     $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function homeReset() {
