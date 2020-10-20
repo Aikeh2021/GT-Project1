@@ -14,6 +14,12 @@
 
 #title {
   margin-bottom: 30px;
+  font-family: Escafina-Medium;
+}
+
+@font-face {
+  font-family: Escafina-Medium;
+  src: url(x_fonts/Escafina-Medium.otf);
 }
 
 #btn-div {
@@ -48,24 +54,17 @@
 }
 
 .btn:focus,
-.btn:active {
+.btn:active,
+#search:active {
   box-shadow: none !important;
 }
 
-#search-input {
+#search {
   box-shadow: none !important;
   padding-bottom: 48px;
   border-color: #cccccc;
   vertical-align: top;
 }
-
-#select-field,
-#select-field:active,
-#select-field:focus {
-  box-shadow: none !important;
-}
-
-
 
 /* Button Hovers */
 .home {
@@ -88,8 +87,6 @@
   background-color: #f9edc2;
 }
 
-
-
 h3 {
   padding-top: 200px;
   padding-bottom: 5px;
@@ -97,6 +94,16 @@ h3 {
 
 p {
   padding-bottom: 40px;
+}
+
+#generated-content {
+  margin: 0 auto;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer  */
@@ -116,3 +123,38 @@ footer {
   padding: 5px;
 }
 
+/* Media queries */
+
+@media only screen and (max-width: 767px) {
+  #btn-div {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 75%;
+    text-align: center;
+  }
+
+  h3,
+  p {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 75%;
+    text-align: center;
+  }
+
+#generated-content {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+#generated-content img {
+  max-height: 250px;
+  vertical-align: middle;
+  margin: 5px;
+}

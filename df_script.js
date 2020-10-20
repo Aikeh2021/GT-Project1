@@ -3,7 +3,8 @@ $(document).ready(function () {
 
   var video = "";
   // once the form is submitted
-  $("#Form").submit(function (event) {
+  $("form").on("submit", function (event) {
+    if ($(this).attr("id") !== "music") return;
     // we run prevent default to keep from refreshing the page.
     event.preventDefault();
     // this variable holds the input data from the user input.
@@ -27,7 +28,7 @@ $(document).ready(function () {
       url: URL,
       method: "GET",
     }).then(function (response) {
-      // this dynamicaly generates html to hold the video.
+      // this dynamically generates html to hold the video.
       response.items.forEach((item) => {
         video = `
 
