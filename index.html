@@ -50,7 +50,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6" id="header">
           <h1 class="display-4 text-center" id="title">The Inspirator</h1>
-          <p class="text-center">
+          <p class="text-center" id="site-par">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa
             itaque dolore cumque ut doloremque expedita et, laborum nostrum
             harum.
@@ -86,6 +86,7 @@
                 hover
               ></lottie-player>
             </button>
+            <!-- the movie section -->
             <button type="button" class="btn cat" id="btn-four">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json"
@@ -101,11 +102,11 @@
             <h3 class="display-3 text-center" id="cat-headline"></h3>
             <!-- should this be p or h3? -->
             <p class="text-center" id="cat-desc"></p>
-            <!-- <div id="select-field">
+            <div id="select-field">
               <select class="form-control form-control-md">
                 <option>subcategories</option>
               </select>
-            </div> -->
+            </div>
             <br />
             <div class="input-group mb-3" id="search">
               <input
@@ -116,7 +117,7 @@
                 aria-label="Search"
                 style="height: 60px"
               />
-              <div class="input-group-append">
+              <div class="input-group-append" id="search-bar">
                 <button class="btn" id="search-btn" type="submit">
                   <lottie-player
                     src="https://assets7.lottiefiles.com/packages/lf20_gdy6bjaf.json"
@@ -161,6 +162,8 @@
     ></script>
 
     <script src="./script.js"></script>
+    <!-- Added my javascript to make sure it works -->
+    <script src="ashley.js"></script>
     <script src="./df_script.js"></script>
     <script src="tara.js"></script>
   </body>

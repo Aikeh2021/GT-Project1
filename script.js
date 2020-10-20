@@ -40,7 +40,7 @@ $(document).ready(function () {
   }
 
   function catTwo() {
-    console.log("film");
+    console.log("art");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "art");
@@ -57,7 +57,7 @@ $(document).ready(function () {
   }
 
   function catThree() {
-    console.log("film");
+    console.log("literature");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "art");
@@ -74,7 +74,7 @@ $(document).ready(function () {
   }
 
   function catFour() {
-    console.log("read");
+    console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "read");
@@ -101,4 +101,17 @@ $(document).ready(function () {
   btnThree.on("click", catThree);
   btnFour.on("click", catFour);
   homeBtn.on("click", homeReset);
+
+  var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
+  var URL =
+    "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=" +
+    apiKey +
+    "&part=snippet,contentDetails,statistics,status";
+
+  $.ajax({
+    url: URL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+  });
 });

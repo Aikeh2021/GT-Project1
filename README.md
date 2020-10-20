@@ -2,7 +2,7 @@
 
 ## Description
 
-The Inspirator, an Application to help unlock creativity for persons needing a fresh approach, a different perspective to help continue or initiate a project, from writing a song to plotting a story.
+The Inspirator: an application to help unlock creativity for persons needing a fresh approach. This site provides a different perspective to help continue or initiate a project, from writing a song to plotting a story. Whenever you need a nudge in the right direction, The Inspirator is here to help.
 
 ## User Story
 
@@ -24,7 +24,7 @@ We will concentrate on four main sources: Music, Visual Arts, Movies and Videos,
 Please view gif to see the how the quiz performance.
 ![GT-Project1]()
 
-To view live visit: [click here.]()
+To view live visit: [click here.](https://mbostwick1.github.io/GT-Project1/)
 
 One may also view locally by following the above installation steps and opening [index.html](index.html) in your browser.
 
