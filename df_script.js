@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
+  var apiKey = "AIzaSyBKB2UocjLih904S60Nn4VCaOM-QMHQyQM";
 
   var video = "";
   // once the form is submitted
