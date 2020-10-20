@@ -20,8 +20,8 @@ $(document).ready(function(){
         var moviePlot = $("<p>").text("Summary: " + response.overview)
         var runtime = $("<p>").text("Runtime: " + response.runtime + " minutes")
         var releaseDate = $("<p>").text("Release Date: " + response.release_date)
-        var randomMovieBtn = $("<button>").addClass("text-center").text("Inspire me!").attr("text-align", "center")
-        $("#generated-content").append(movieTitle, tagline, moviePlot, runtime, releaseDate, randomMovieBtn);
+        // var randomMovieBtn = $("<button>").addClass("text-center").text("Inspire me!").attr("text-align", "center")
+        $("#generated-content").append(movieTitle, tagline, moviePlot, runtime, releaseDate);
         
 
         // var randomMoviePoster = $("<div>").$("<img>").attr("src:", response.images.posters[0]);
