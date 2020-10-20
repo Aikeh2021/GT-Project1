@@ -2,9 +2,6 @@ $(document).ready(function(){
     //Making sure the film js is working
     console.log("The film.js is working");
     //Emptying out the fields before each new movie is generated to ensure too many don't pop up at once
-    // $("#select-field").empty();
-    // $("#search").empty();
-    
 //Adding the event listener to the film icon on the navbar (to generate the first randomly selected film)
  $("#btn-four").on("click", function(){
     $("#generated-content").empty("");
