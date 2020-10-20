@@ -56,15 +56,3 @@ function getCollection(keyword, qty, callback) {
     return Array.from(newArr); //return array, not Set
   }
 }
-
-$("#ytForm").submit(function (event) {
-  event.preventDefault();
-
-  var search = $("#search-input").val();
-
-  artSearch(apiKey, search, 10);
-});
-
-function artSearch(key, search) {
-
-        });
