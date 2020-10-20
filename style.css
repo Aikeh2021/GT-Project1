@@ -12,8 +12,14 @@
   margin-top: 200px;
 }
 
+@font-face {
+  font-family: Escafina-Medium;
+  src: url("x_font/Escafina-Medium.otf") format("opentype");
+}
+
 #title {
   margin-bottom: 30px;
+  font-family: Escafina-Medium;
 }
 
 #btn-div {
@@ -52,7 +58,7 @@
   box-shadow: none !important;
 }
 
-#search-input {
+#search {
   box-shadow: none !important;
   padding-bottom: 48px;
   border-color: #cccccc;
@@ -64,6 +70,16 @@
 #select-field:focus,
 #select-field {
   box-shadow: none !important;
+}
+
+#generated-content {
+  margin: 0 auto;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Button Hovers */
@@ -95,6 +111,7 @@ h3 {
 p {
   padding-bottom: 40px;
 }
+
 
 /* footer  */
 footer {
@@ -131,15 +148,5 @@ footer {
     float: none;
     width: 75%;
     text-align: center;
-  }
-
-  .generated-content {
-    margin: 0 auto;
-    display: block;
-    float: none;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
   }
 }

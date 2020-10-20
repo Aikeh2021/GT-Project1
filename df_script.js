@@ -15,7 +15,7 @@ $(document).ready(function () {
     
     function videoSearch(key, search, maxResults) {
 
-      $("#generated-content").empty()
+      $("#generated-content").empty();
 
       $.get(
         "https://www.googleapis.com/youtube/v3/search?key=" +
