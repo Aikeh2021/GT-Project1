@@ -58,13 +58,14 @@ function getCollection(keyword, qty, callback) {
 }
 
 $("form").on("submit", function (e) {
-    if ($(this).attr("id") !== "art") return;
-    e.preventDefault();
-    const numberOfItems = 5;
-    const searchTerm = $("#search-input").val().trim();
-    getCollection(searchTerm, numberOfItems, displayCollection);
-    return false;
-  });
+  if ($(this).attr("id") !== "art") return;
+  e.preventDefault();
+  const numberOfItems = 5;
+  const searchTerm = $("#search-input").val().trim();
+  getCollection(searchTerm, numberOfItems, displayCollection);
+  return false;
+});
+
+function displayCollection(data) {
   
-  
-  
+}
