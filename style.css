@@ -13,7 +13,13 @@
 }
 
 #title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-family: Escafina-Medium;
+}
+
+@font-face {
+  font-family: Escafina-Medium;
+  src: url(x_fonts/Escafina-Medium.otf);
 }
 
 #btn-div {
@@ -48,22 +54,16 @@
 }
 
 .btn:focus,
-.btn:active {
+.btn:active,
+#search:active {
   box-shadow: none !important;
 }
 
-#search-input {
+#search {
   box-shadow: none !important;
   padding: 25px;
   border-color: #cccccc;
   vertical-align: top;
-}
-
-#select-field,
-#select-field:active,
-#select-field:focus,
-#select-field {
-  box-shadow: none !important;
 }
 
 /* Button Hovers */
@@ -92,8 +92,18 @@ h3 {
   padding-bottom: 5px;
 }
 
-p {
-  padding-bottom: 40px;
+.cat-p {
+  padding-bottom: 10px;
+}
+
+#generated-content {
+  margin: 0 auto;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer  */
@@ -116,7 +126,12 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 767px) {
+  .container-fluid {
+    margin-top: 100px;
+  }
+
   #btn-div {
+    padding-top: 30px;
     margin: 0 auto;
     display: block;
     float: none;
