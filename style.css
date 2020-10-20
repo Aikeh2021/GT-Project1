@@ -14,6 +14,12 @@
 
 #title {
   margin-bottom: 30px;
+  font-family: Escafina-Medium;
+}
+
+@font-face {
+  font-family: Escafina-Medium;
+  src: url(x_fonts/Escafina-Medium.otf);
 }
 
 #btn-div {
@@ -48,22 +54,16 @@
 }
 
 .btn:focus,
-.btn:active {
+.btn:active,
+#search:active {
   box-shadow: none !important;
 }
 
-#search-input {
+#search {
   box-shadow: none !important;
   padding-bottom: 48px;
   border-color: #cccccc;
   vertical-align: top;
-}
-
-#select-field,
-#select-field:active,
-#select-field:focus,
-#select-field {
-  box-shadow: none !important;
 }
 
 /* Button Hovers */
@@ -94,6 +94,16 @@ h3 {
 
 p {
   padding-bottom: 40px;
+}
+
+#generated-content {
+  margin: 0 auto;
+  display: block;
+  float: none;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer  */
@@ -133,7 +143,7 @@ footer {
     text-align: center;
   }
 
-  #generated-content {
+#generated-content {
     margin: 0 auto;
     display: block;
     float: none;
@@ -142,7 +152,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-}
 
 #generated-content img {
   max-height: 250px;
