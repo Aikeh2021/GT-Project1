@@ -67,5 +67,9 @@ $("form").on("submit", function (e) {
 });
 
 function displayCollection(data) {
-  
+    var html = "";
+    for (let item of data) {
+      html += `<img src="${item.imageSrc}">`;
+    }
+    $("#generated-content").html(html);
 }
