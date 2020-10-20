@@ -75,10 +75,6 @@ $(document).ready(function () {
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-<<<<<<< HEAD
-    content.html();
-=======
->>>>>>> b12ba802d93d983f52fffce8feb086ce89da1272
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
