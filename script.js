@@ -1,11 +1,7 @@
 // STORAGE
 $(document).ready(function () {
   // console.log("oh hey!");
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> a1a9dd60f99fe7973f649733e687a65d0f521086
   // APPLICATION VARIABLES
   var btnOne = $("#btn-one");
   var btnTwo = $("#btn-two");
@@ -14,6 +10,7 @@ $(document).ready(function () {
   var catHeadline = $("#cat-headline");
   var catDesc = $("#cat-desc");
   var form = $("form");
+  var searchField = $("#search");
   var content = $("#generated-content");
   var homeBtn = $(".home");
   var container = $(".container-fluid");
@@ -35,7 +32,7 @@ $(document).ready(function () {
       '<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>'
     );
     catDesc.html(
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+      "YouTube offers a wide variety of user-generated inspirational content. Try any keyword to get started!"
     );
 
     content.css("padding-bottom", "100px");
@@ -52,7 +49,7 @@ $(document).ready(function () {
       '<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>'
     );
     catDesc.html(
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+      "Get inspired by art masterpieces. Try any keyword to get started!"
     );
 
     content.css("padding-bottom", "100px");
@@ -96,6 +93,7 @@ $(document).ready(function () {
 
   function homeReset() {
     $("html, body").animate({ scrollTop: 0 }, 1000);
+    // searchField.html("");
   }
 
   // SET EVENT LISTENERS/HANDLERS
