@@ -142,7 +142,8 @@ footer {
     width: 75%;
     text-align: center;
   }
-  #generated-content {
+
+#generated-content {
     margin: 0 auto;
     display: block;
     float: none;
@@ -152,10 +153,9 @@ footer {
     align-items: center;
   }
 
-}
-
 #generated-content img {
   max-height: 250px;
   vertical-align: middle;
   margin: 5px;
+}
 }
