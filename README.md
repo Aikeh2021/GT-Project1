@@ -28,14 +28,44 @@ To view live visit: [click here.](https://mbostwick1.github.io/GT-Project1/)
 
 One may also view locally by following the above installation steps and opening [index.html](index.html) in your browser.
 
+## Collaborators
+* [Ashley Ikeh](https://github.com/Aikeh2021)
+
 ## License
+MIT License
+
+Copyright © 2020 Phillip Marzullo, Melanie Botswick, Tara Martin, Dennis Francis, Ashley Ikeh
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Credits
-[Bootstrap](https://getbootstrap.com/docs/4.5/components/)
-[Lost Type Co](http://losttype.com/font/?name=escafina)
-[Riley Cran: Font Designer](http://www.rileycran.com)
-[Lord Animated Icons](https://lordicon.com/)
-[Lottie Web Player](https://lottiefiles.com/web-player)
-[Stack Overflow Forums](https://stackoverflow.com/)
-[W3 Schools JS](https://www.w3schools.com/js/)
-[MDN web docs](https://developer.mozilla.org/en-US/)
+* [Bootstrap](https://getbootstrap.com/docs/4.5/components/)
+* [Lost Type Co](http://losttype.com/font/?name=escafina)
+* [Riley Cran: Font Designer](http://www.rileycran.com)
+* [Lord Animated Icons](https://lordicon.com/)
+* [Lottie Web Player](https://lottiefiles.com/web-player)
+* [Stack Overflow Forums](https://stackoverflow.com/)
+* [W3 Schools JS](https://www.w3schools.com/js/)
+* [MDN web docs](https://developer.mozilla.org/en-US/)
+* [Document Ready](https://learn.jquery.com/using-jquery-core/document-ready/)
+* [Random Array Item](https://www.kirupa.com/html5/picking_random_item_from_array.htm)
+* [Quotes About Film Making](https://www.filmcrux.com/blog/best-filmmaking-quotes)
+
+
+
