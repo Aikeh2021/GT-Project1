@@ -37,6 +37,7 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
   }
 
   function catTwo() {
@@ -54,6 +55,7 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
   }
 
   function catThree() {
@@ -71,6 +73,7 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
   }
 
   function catFour() {
@@ -88,6 +91,7 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
   }
 
   function homeReset() {
