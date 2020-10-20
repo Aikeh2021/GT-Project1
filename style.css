@@ -54,7 +54,7 @@
 
 #search-input {
   box-shadow: none !important;
-  padding-bottom: 48px;
+  padding: 25px;
   border-color: #cccccc;
   vertical-align: top;
 }
