@@ -25,17 +25,16 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="tara.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/tomwilusz/lord-icon-element/bin/lord-icon.js"></script>
-
-    <script src="https://assets4.lottiefiles.com/packages/lf20_yzu6khvr.json"></script>
+  
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <!-- i added an id to nav bar to target it in css. it has to have a background color so you cant see the content as it scrolls under it. -->
-    <nav class="navbar navbar-light bg-transparent" id="navbar">
+    <nav class="navbar navbar-light bg-white" id="navbar">
       <span class="navbar-brand mb-0 home">
         <lottie-player
           src="https://assets2.lottiefiles.com/packages/lf20_0pvqxuib.json"
+          alt="home"
           background="transparent"
           speed="1"
           style="width: 60px; height: 60px"
@@ -52,7 +51,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6" id="header">
           <h1 class="display-4 text-center" id="title">The Inspirator</h1>
-          <p class="text-center">
+          <p class="text-center" id="site-par">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa
             itaque dolore cumque ut doloremque expedita et, laborum nostrum
             harum.
@@ -61,6 +60,7 @@
             <button type="button" class="btn cat" id="btn-one">
               <lottie-player
                 src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json"
+                alt="YouTube search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -70,6 +70,7 @@
             <button type="button" class="btn cat" id="btn-two">
               <lottie-player
                 src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json"
+                alt="Art search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -79,15 +80,18 @@
             <button type="button" class="btn cat" id="btn-three">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json"
+                alt="Books/Article search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
                 hover
               ></lottie-player>
             </button>
+            <!-- the movie section -->
             <button type="button" class="btn cat" id="btn-four">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json"
+                alt="Movies search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -99,11 +103,11 @@
             <h3 class="display-3 text-center" id="cat-headline"></h3>
             <!-- should this be p or h3? -->
             <p class="text-center" id="cat-desc"></p>
-            <!-- <div id="select-field">
+            <div id="select-field">
               <select class="form-control form-control-md">
                 <option>subcategories</option>
               </select>
-            </div> -->
+            </div>
             <br />
             <div class="input-group mb-3" id="search">
               <input
@@ -114,14 +118,16 @@
                 aria-label="Search"
                 style="height: 60px"
               />
-              <div class="input-group-append">
+              <div class="input-group-append" id="search-bar">
                 <button class="btn" id="search-btn" type="submit">
                   <lottie-player
                     src="https://assets7.lottiefiles.com/packages/lf20_gdy6bjaf.json"
+                    alt="Inspiration Search"
                     background="transparent"
                     speed="1"
                     style="width: 40px; height: 40px"
                     hover
+                    autoplay
                   ></lottie-player>
                 </button>
               </div>
@@ -157,6 +163,8 @@
     ></script>
 
     <script src="./script.js"></script>
+    <!-- Added my javascript to make sure it works -->
+    <script src="ashley.js"></script>
     <script src="./df_script.js"></script>
   </body>
 </html>
