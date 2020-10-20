@@ -3,7 +3,7 @@ $(document).ready(function(){
     console.log("The film.js is working");
     //Emptying out the fields before each new movie is generated to ensure too many don't pop up at once
 //Adding the event listener to the film icon on the navbar (to generate the first randomly selected film)
- $("#btn-four").on("click", function(){
+$("#btn-four").on("click", function(){
     $("#generated-content").empty("");
    $("#cat-desc").empty("").text("'Drama is life with the dullbits cut out.'  --Alfred Hitchcock");
 //    $("#cat-headline").empty("").text("Film");

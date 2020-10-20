@@ -126,6 +126,11 @@ footer {
 /* Media queries */
 
 @media only screen and (max-width: 767px) {
+
+  .container-fluid {
+    margin-top: 100px;
+  }
+
   #btn-div {
     padding-top: 30px;
     margin: 0 auto;
