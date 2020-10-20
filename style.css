@@ -143,4 +143,18 @@ footer {
     text-align: center;
   }
 
+#generated-content {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+#generated-content img {
+  max-height: 250px;
+  vertical-align: middle;
+  margin: 5px;
 }
