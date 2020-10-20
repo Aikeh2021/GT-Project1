@@ -25,17 +25,16 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="tara.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/tomwilusz/lord-icon-element/bin/lord-icon.js"></script>
-
-    <script src="https://assets4.lottiefiles.com/packages/lf20_yzu6khvr.json"></script>
+  
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
-    <!-- I added an id to nav bar to target it in css. it has to have a background color so you cant see the content as it scrolls under it. -->
-    <nav class="navbar navbar-light bg-transparent" id="navbar">
+    <!-- i added an id to nav bar to target it in css. it has to have a background color so you cant see the content as it scrolls under it. -->
+    <nav class="navbar navbar-light bg-white" id="navbar">
       <span class="navbar-brand mb-0 home">
         <lottie-player
           src="https://assets2.lottiefiles.com/packages/lf20_0pvqxuib.json"
+          alt="home"
           background="transparent"
           speed="1"
           style="width: 60px; height: 60px"
@@ -61,6 +60,7 @@
             <button type="button" class="btn cat" id="btn-one">
               <lottie-player
                 src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json"
+                alt="YouTube search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -70,6 +70,7 @@
             <button type="button" class="btn cat" id="btn-two">
               <lottie-player
                 src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json"
+                alt="Art search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -79,6 +80,7 @@
             <button type="button" class="btn cat" id="btn-three">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json"
+                alt="Books/Article search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -89,6 +91,7 @@
             <button type="button" class="btn cat" id="btn-four">
               <lottie-player
                 src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json"
+                alt="Movies search"
                 background="transparent"
                 speed="1"
                 style="width: 100px; height: 100px"
@@ -119,10 +122,12 @@
                 <button class="btn" id="search-btn" type="submit">
                   <lottie-player
                     src="https://assets7.lottiefiles.com/packages/lf20_gdy6bjaf.json"
+                    alt="Inspiration Search"
                     background="transparent"
                     speed="1"
                     style="width: 40px; height: 40px"
                     hover
+                    autoplay
                   ></lottie-player>
                 </button>
               </div>

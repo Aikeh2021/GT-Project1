@@ -28,12 +28,11 @@ $(document).ready(function () {
     console.log("music");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_vvbgxmvk.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
@@ -43,12 +42,11 @@ $(document).ready(function () {
     console.log("art");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
@@ -58,12 +56,11 @@ $(document).ready(function () {
     console.log("literature");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
-    content.html('<img src="https://www.fillmurray.com/g/600/300" />');
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
@@ -73,12 +70,15 @@ $(document).ready(function () {
     console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
-    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover></lottie-player>');
+    catHeadline.html('<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_lllwgxdl.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>');
     catDesc.html(
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
     );
 
+<<<<<<< HEAD
     content.html();
+=======
+>>>>>>> b12ba802d93d983f52fffce8feb086ce89da1272
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
