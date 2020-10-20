@@ -1,7 +1,11 @@
 // STORAGE
 $(document).ready(function () {
   // console.log("oh hey!");
+<<<<<<< HEAD
+  
+=======
 
+>>>>>>> a1a9dd60f99fe7973f649733e687a65d0f521086
   // APPLICATION VARIABLES
   var btnOne = $("#btn-one");
   var btnTwo = $("#btn-two");
