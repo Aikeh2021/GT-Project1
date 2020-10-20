@@ -56,3 +56,4 @@ function getCollection(keyword, qty, callback) {
     return Array.from(newArr); //return array, not Set
   }
 }
+

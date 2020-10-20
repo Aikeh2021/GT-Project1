@@ -43,7 +43,7 @@ $(document).ready(function () {
     console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
-    form.attr("id", "film");
+    form.attr("id", "art");
     catHeadline.html(
       '<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_hfnjb1rt.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>'
     );
@@ -57,7 +57,7 @@ $(document).ready(function () {
   }
 
   function catThree() {
-    console.log("art");
+    console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "art");

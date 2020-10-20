@@ -3,7 +3,8 @@ $(document).ready(function () {
 
   var video = "";
 
-  $("#music").submit(function (event) {
+  $("form").on("submit", function (event) {
+    if ($(this).attr("id") !== "music") return;
     event.preventDefault();
 
     var search = $("#search-input").val();
