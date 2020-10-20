@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   var video = "";
 
-  $("#ytForm").submit(function (event) {
+  $("#music").submit(function (event) {
     event.preventDefault();
 
     var search = $("#search-input").val();
