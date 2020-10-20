@@ -57,3 +57,19 @@ function getCollection(keyword, qty, callback) {
   }
 }
 
+$("form").on("submit", function (e) {
+  if ($(this).attr("id") !== "art") return;
+  e.preventDefault();
+  const numberOfItems = 5;
+  const searchTerm = $("#search-input").val().trim();
+  getCollection(searchTerm, numberOfItems, displayCollection);
+  return false;
+});
+
+function displayCollection(data) {
+    var html = "";
+    for (let item of data) {
+      html += `<img src="${item.imageSrc}">`;
+    }
+    $("#generated-content").html(html);
+}
