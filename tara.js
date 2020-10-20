@@ -30,11 +30,10 @@ function getCollection(keyword, qty, callback) {
       //add data to data array
       data.push({
         imageSrc: obj.primaryImage,
-        title: obj.title,
-        artist: obj.artistDisplayName,
-        bio: obj.artistDisplayBio,
-        date: obj.objectDate,
-        medium: obj.medium,
+        title: obj.title.replace(/"/g, "&quot;"),
+        artist: obj.artistDisplayName.replace(/"/g, "&quot;"),
+        date: obj.objectDate.replace(/"/g, "&quot;"),
+        medium: obj.medium.replace(/"/g, "&quot;"),
       });
       //do we have all the data?
       if (data.length === qty) {
@@ -67,9 +66,43 @@ $("form").on("submit", function (e) {
 });
 
 function displayCollection(data) {
-    var html = "";
-    for (let item of data) {
-      html += `<img src="${item.imageSrc}">`;
-    }
-    $("#generated-content").html(html);
+  var html = "";
+  for (let item of data) { 
+    let tooltip = `Title: ${item.title} (${item.date || "?"})<br/>Artist: ${
+      item.artist || "?"
+    }<br/>Medium: ${item.medium}`;
+    html += `<img src="${item.imageSrc}" data-tooltip="${tooltip}">`;
+  }
+  $("#generated-content").html(html);
+  document.querySelectorAll("#generated-content img").forEach(setupTooltip);
+}
+
+function setupTooltip(img) {
+  console.log(img);
+  img.addEventListener("mouseover", tooltipOn);
+}
+
+function tooltipOn(e) {
+  e.target.removeEventListener("mouseover", tooltipOn);
+  e.target.addEventListener("mousemove", tooltipMove);
+  e.target.addEventListener("mouseout", tooltipOff);
+  let oldTooltip = document.querySelector("#tooltip");
+  if (oldTooltip) oldTooltip.outerHTML = "";
+  tooltip = document.createElement("div");
+  tooltip.id = "tooltip";
+  tooltip.innerHTML = e.target.getAttribute("data-tooltip");
+  tooltipMove(e);
+  document.body.appendChild(tooltip);
+}
+
+function tooltipMove(e) {
+  tooltip.style.left = e.pageX + "px";
+  tooltip.style.top = e.pageY + "px";
+}
+
+function tooltipOff(e) {
+  e.target.removeEventListener("mousemove", tooltipMove);
+  e.target.removeEventListener("mouseout", tooltipOff);
+  e.target.addEventListener("mouseover", tooltipOn);
+  document.body.removeChild(tooltip);
 }

@@ -37,6 +37,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catTwo() {
@@ -54,6 +56,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catThree() {
@@ -71,6 +75,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catFour() {
@@ -88,6 +94,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function homeReset() {
