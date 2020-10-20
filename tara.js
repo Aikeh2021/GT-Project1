@@ -57,3 +57,8 @@ function getCollection(keyword, qty, callback) {
   }
 }
 
+$("form").on("submit", function (e) {
+    if ($(this).attr("id") !== "art") return;
+    e.preventDefault();
+    
+  
