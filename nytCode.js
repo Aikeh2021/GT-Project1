@@ -11,27 +11,27 @@ function buildQueryURL() {
   var queryParams = { "api-key": "R1a31F4tBjCUaM2ho8GtIFsrSdtXt30M" };
 
   // Grab text the user typed into the search input, add to the queryParams object
-  queryParams.q = $("#search-term")
+  queryParams.q = $("#search-input")
     .val()
     .trim();
 
   // If the user provides a startYear, include it in the queryParams object
-  var startYear = $("#start-year")
-    .val()
-    .trim();
+  // var startYear = $("#start-year")
+  //   .val()
+  //   .trim();
 
-  if (parseInt(startYear)) {
-    queryParams.begin_date = startYear + "0101";
-  }
+  // if (parseInt(startYear)) {
+  //   queryParams.begin_date = startYear + "0101";
+  // }
 
-  // If the user provides an endYear, include it in the queryParams object
-  var endYear = $("#end-year")
-    .val()
-    .trim();
+  // // If the user provides an endYear, include it in the queryParams object
+  // var endYear = $("#end-year")
+  //   .val()
+  //   .trim();
 
-  if (parseInt(endYear)) {
-    queryParams.end_date = endYear + "0101";
-  }
+  // if (parseInt(endYear)) {
+  //   queryParams.end_date = endYear + "0101";
+  // }
 
   // Logging the URL so we have access to it for troubleshooting
   console.log("---------------\nURL: " + queryURL + "\n---------------");
@@ -83,26 +83,26 @@ function updatePage(NYTData) {
       );
     }
 
-    // If the article has a byline, log and append to $articleList
-    var byline = article.byline;
+    //  If the article has a byline, log and append to $articleList
+      var byline = article.byline;
 
-    if (byline && byline.original) {
+      if (byline && byline.original) {
       console.log(byline.original);
       $articleListItem.append("<h5>" + byline.original + "</h5>");
     }
 
-    // Log section, and append to document if exists
+    // // Log section, and append to document if exists
     var section = article.section_name;
     console.log(article.section_name);
     if (section) {
-      $articleListItem.append("<h5>Section: " + section + "</h5>");
+    $articleListItem.append("<h5>Section: " + section + "</h5>");
     }
 
-    // Log published date, and append to document if exists
+    // // Log published date, and append to document if exists
     var pubDate = article.pub_date;
     console.log(article.pub_date);
     if (pubDate) {
-      $articleListItem.append("<h5>" + article.pub_date + "</h5>");
+    $articleListItem.append("<h5>" + article.pub_date + "</h5>");
     }
 
     // Append and log url
@@ -115,14 +115,15 @@ function updatePage(NYTData) {
 
 
 // Function to empty out the articles
-function clear() {
-  $("#generated-content").empty();
+    function clear() {
+    $("#generated-content").empty();
 }
 
 // CLICK HANDLERS
 // ==========================================================
-$("#btn-three").on("click", function(event){
+  $("#search-btn").on("click", function(event){
   $("#generated-content").empty("");
+  console.log($("#search-input").val())
 // .on("click") function associated with the Search Button
 // $("#run-search").on("click", function(event) {
   // This line allows us to take advantage of the HTML "submit" property
