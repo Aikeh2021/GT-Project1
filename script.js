@@ -65,7 +65,7 @@ $(document).ready(function () {
     // console.log("art");
     // Visible attributes //
     form.css("visibility", "visible");
-    form.attr("id", "art");
+    form.attr("id", "pages");
     catHeadline.html(
       '<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>'
     );
