@@ -1,7 +1,6 @@
 // STORAGE
 $(document).ready(function () {
   // console.log("oh hey!");
-
   // APPLICATION VARIABLES
   var btnOne = $("#btn-one");
   var btnTwo = $("#btn-two");
@@ -39,6 +38,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catTwo() {
@@ -56,6 +57,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catThree() {
@@ -73,6 +76,8 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
   }
 
   function catFour() {
@@ -90,7 +95,9 @@ $(document).ready(function () {
     content.css("padding-bottom", "100px");
     // Navigate down the page //
     $("html, body").animate({ scrollTop: form.height() }, 750);
-    
+    $("#generated-content").html("");
+    $("#search-input").focus().val("");
+
   }
 
   function homeReset() {
@@ -106,16 +113,4 @@ $(document).ready(function () {
   btnFour.on("click", catFour);
   homeBtn.on("click", homeReset);
 
-  var apiKey = "AIzaSyAWsdDOn6l8M1xX89rUG_KTlrn_uJ8lSYw";
-  var URL =
-    "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=" +
-    apiKey +
-    "&part=snippet,contentDetails,statistics,status";
-
-  $.ajax({
-    url: URL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-  });
 });
