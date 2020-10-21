@@ -11,6 +11,7 @@ $(document).ready(function () {
   var form = $("form");
   var searchField = $("#search");
   var content = $("#generated-content");
+  var search = $("#search");
   var homeBtn = $(".home");
   var container = $(".container-fluid");
 
@@ -23,7 +24,7 @@ $(document).ready(function () {
   // DOM ELEMENTS
 
   function catOne(event) {
-    console.log("music");
+    // console.log("music");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "music");
@@ -42,7 +43,7 @@ $(document).ready(function () {
   }
 
   function catTwo() {
-    console.log("art");
+    // console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "art");
@@ -61,7 +62,7 @@ $(document).ready(function () {
   }
 
   function catThree() {
-    console.log("literature");
+    // console.log("art");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "art");
@@ -80,7 +81,7 @@ $(document).ready(function () {
   }
 
   function catFour() {
-    console.log("film");
+    // console.log("read");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "read");
@@ -96,6 +97,7 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: form.height() }, 750);
     $("#generated-content").html("");
     $("#search-input").focus().val("");
+
   }
 
   function homeReset() {
