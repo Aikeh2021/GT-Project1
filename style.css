@@ -12,6 +12,11 @@
   margin-top: 200px;
 }
 
+@font-face {
+  font-family: Escafina-Medium;
+  src: url("x_font/Escafina-Medium.otf") format("opentype");
+}
+
 #title {
   margin-bottom: 20px;
   font-family: Escafina-Medium;
@@ -106,6 +111,7 @@ h3 {
   align-items: center;
 }
 
+
 /* footer  */
 footer {
   position: relative;
@@ -168,11 +174,11 @@ footer {
 #tooltip {
   position: absolute;
   background-color: rgba(210, 180, 240, 0.9);
-  font-size: 14px;
+  font-size: 15px;
   font-family: sans-serif;
   font-weight: bold;
   padding: 5px 10px;
-  border: 2px solid maroon;
+  border: 3px solid rgb(221, 31, 126);
   border-radius: 5px;
   transform: translate(-50%, -125%);
   pointer-events: none;

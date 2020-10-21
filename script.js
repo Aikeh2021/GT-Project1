@@ -11,6 +11,7 @@ $(document).ready(function () {
   var form = $("form");
   var searchField = $("#search");
   var content = $("#generated-content");
+  var search = $("#search");
   var homeBtn = $(".home");
   var container = $(".container-fluid");
 
@@ -23,7 +24,7 @@ $(document).ready(function () {
   // DOM ELEMENTS
 
   function catOne(event) {
-    console.log("music");
+    // console.log("music");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "music");
@@ -42,7 +43,7 @@ $(document).ready(function () {
   }
 
   function catTwo() {
-    console.log("art");
+    // console.log("film");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "art");
@@ -61,7 +62,7 @@ $(document).ready(function () {
   }
 
   function catThree() {
-    console.log("literature");
+    // console.log("art");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "pages");
@@ -69,7 +70,7 @@ $(document).ready(function () {
       '<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_kseho6rf.json" background="transparent" speed="1" style="width: 300px; height: 300px" hover autoplay></lottie-player>'
     );
     catDesc.html(
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa itaque dolore cumque ut doloremque expedita et, laborum nostrum harum."
+      "Explore The New York Times for articles and books to find your inspiration. Try any keyword to get started!"
     );
 
     content.css("padding-bottom", "100px");
@@ -80,7 +81,7 @@ $(document).ready(function () {
   }
 
   function catFour() {
-    console.log("film");
+    // console.log("read");
     // Visible attributes //
     form.css("visibility", "visible");
     form.attr("id", "read");
@@ -96,6 +97,7 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: form.height() }, 750);
     $("#generated-content").html("");
     $("#search-input").focus().val("");
+
   }
 
   function homeReset() {

@@ -55,7 +55,7 @@ function getCollection(keyword, qty, callback) {
     return Array.from(newArr); //return array, not Set
   }
 }
-
+// renders five random images based on keyword in search
 $("form").on("submit", function (e) {
   if ($(this).attr("id") !== "art") return;
   e.preventDefault();
@@ -64,10 +64,10 @@ $("form").on("submit", function (e) {
   getCollection(searchTerm, numberOfItems, displayCollection);
   return false;
 });
-
+// hover display
 function displayCollection(data) {
   var html = "";
-  for (let item of data) { 
+  for (let item of data) {
     let tooltip = `Title: ${item.title} (${item.date || "?"})<br/>Artist: ${
       item.artist || "?"
     }<br/>Medium: ${item.medium}`;
@@ -76,7 +76,7 @@ function displayCollection(data) {
   $("#generated-content").html(html);
   document.querySelectorAll("#generated-content img").forEach(setupTooltip);
 }
-
+// hover functions
 function setupTooltip(img) {
   console.log(img);
   img.addEventListener("mouseover", tooltipOn);
